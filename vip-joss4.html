@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noindex">
+<style>body {margin: 0 auto;overflow: hidden;}iframe {border:0;overflow: hidden;position:absolute;width: 100%;top: 0px;height: 100%;}</style>
+</head>
+<body>
+<script type="text/javascript">
+		function gVar() {
+		    var vars = {};
+		    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,    
+		    function(m,key,value) {
+		      vars[key] = value;
+		    });
+		    return vars;
+		}
+
+		var yb_id = gVar()["v"];
+
+		if (yb_id) {
+		    document.write(unescape('<iframe scrolling="no" sandbox="allow-forms allow-modals allow-orientation-lock allow-presentation allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="https://recordmp3.co/#/watch?layout=button&amp;t_press_to_start=Convert%20to%20mp3&amp;t_waiting_for_worker=Menyiapkan%20Link...&amp;t_in_queue=Converting&amp;t_converting=Proses...&amp;t_done=Download&amp;v='+yb_id+'"></iframe>'));
+		}
+	</script>
