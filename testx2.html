@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noindex">
+<style>body {margin: 0 auto;overflow: hidden;}iframe {border:0;overflow: hidden;position:absolute;width: 100%;top: 0px;height: 100%;}</style>
+</head>
+<body>
+<script type="text/javascript">
+		function gVar() {
+		    var vars = {};
+		    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,    
+		    function(m,key,value) {
+		      vars[key] = value;
+		    });
+		    return vars;
+		}
+
+		var yb_id = gVar()["v"];
+
+		if (yb_id) {
+		    document.write(unescape('<iframe src="//www.recordmp3.co/#/watch?v='+yb_id+'&layout=button&append_file_name=DownloadLagu321.Net&t_press_to_start=Convert&t_converting=Convert%20...&t_done=Download" style="width: 300px; height: 50px; border: 0; background: #fff"></iframe>'));
+		}
+	</script>
+  </body>
+</html>
